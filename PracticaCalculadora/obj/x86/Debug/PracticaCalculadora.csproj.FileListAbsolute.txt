@@ -1,0 +1,7 @@
+C:\Users\Michael\AppData\Local\Temporary Projects\PracticaCalculadora\obj\x86\Debug\PracticaCalculadora.FormCalculadora.resources
+C:\Users\Michael\AppData\Local\Temporary Projects\PracticaCalculadora\obj\x86\Debug\PracticaCalculadora.Properties.Resources.resources
+C:\Users\Michael\AppData\Local\Temporary Projects\PracticaCalculadora\obj\x86\Debug\PracticaCalculadora.csproj.GenerateResource.Cache
+C:\Users\Michael\AppData\Local\Temporary Projects\PracticaCalculadora\bin\Debug\PracticaCalculadora.exe
+C:\Users\Michael\AppData\Local\Temporary Projects\PracticaCalculadora\bin\Debug\PracticaCalculadora.pdb
+C:\Users\Michael\AppData\Local\Temporary Projects\PracticaCalculadora\obj\x86\Debug\PracticaCalculadora.exe
+C:\Users\Michael\AppData\Local\Temporary Projects\PracticaCalculadora\obj\x86\Debug\PracticaCalculadora.pdb

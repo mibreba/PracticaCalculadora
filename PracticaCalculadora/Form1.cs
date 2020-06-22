@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using PracticaCalculadora.Math;
+using System;
 using System.Windows.Forms;
 
 namespace PracticaCalculadora
@@ -22,10 +17,7 @@ namespace PracticaCalculadora
             InitializeComponent();
         }
 
-        ClSumar sum = new ClSumar();
-        Clrestar res = new Clrestar();
-        Cldividir div = new Cldividir();
-        Clmultiplicar mul = new Clmultiplicar();
+        Operation operation;
 
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
@@ -123,32 +115,35 @@ namespace PracticaCalculadora
             switch(operacion){
 
                 case "+":
-                 
-                    resultado= sum.Sumar((primero),(segundo));
-                    txtpantalla.Text = resultado.ToString();
+                {
+                    operation = new Add();
                     break;
-
+                }
                 case "-":
-                    resultado = res.Restar((primero), (segundo));
-                    txtpantalla.Text = resultado.ToString();
+                {
+                    operation = new Substract();
                     break;
+                }
                 case "*":
-                    resultado = mul.multiplicar((primero), (segundo));
-                    txtpantalla.Text = resultado.ToString();
+                {
+                    operation = new Multiply();
                     break;
-
-
+                }
                 case "/":
-                    resultado = div.Dividir((primero), (segundo));
-                    txtpantalla.Text = resultado.ToString();
+                {
+                    operation = new Divide();
                     break;
+                }
             }
+
+            resultado = operation.Execute((primero), (segundo));
+            txtpantalla.Text = resultado.ToString();
+
         }
 
         private void btnpunto_Click(object sender, EventArgs e)
         {
             txtpantalla.Text = txtpantalla.Text +".";
-
         }
     }
 

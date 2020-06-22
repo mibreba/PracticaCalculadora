@@ -9,7 +9,7 @@ namespace PracticaCalculadora.Math
     {
         public double Execute(double x, double y)
         {
-            if (y < 0)
+            if (y == 0)
             {
                 return 99999;
             }
